@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cable network background -->
+    <div class="cable-network"></div>
+
+    <!-- Main container -->
+    <div class="main-container">
+        <!-- Header with navigation - Always dark -->
+        <header class="header" id="main-header">
+            <a href="#home" class="logo">CK</a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Work</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#resume" class="nav-link">Resume</a>
+            </nav>
+        </header>
+
+        <!-- Home Section -->
+        <section class="section dark-section" id="home">
+            <div class="home-content">
+                <h1 class="home-title">Christos Kapsalis</h1>
+                <h2 class="home-subtitle">Full-Stack Software Developer</h2>
+                <a href="#experience" class="btn">Show My Work</a>
+            </div>
+            <div class="scroll-down" onclick="scrollToSection('about')">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section light-section" id="about">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    Full-stack software developer for almost 10 years in numerous software projects. Back-end development in Java, Lua and PHP. Front-end development in Javascript, React, CSS, Bootstrap and HTML. Eager to learn new languages, technologies and undertake interesting projects. Accountable, working on schedule and comfortable working as a team member.
+                </p>
+<!--                 <p class="about-text">
+                    I specialize in creating responsive, user-friendly applications with clean, efficient code. My approach combines technical expertise with creative problem-solving to deliver solutions that meet both business requirements and user needs.
+                </p>
+                <p class="about-text">
+                    When I'm not coding, you can find me contributing to open-source projects, learning new technologies, or sharing knowledge with the developer community through blog posts and talks.
+                </p> -->
+            </div>
+            <div class="scroll-down" onclick="scrollToSection('skills')">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section dark-section" id="skills">
+            <div class="skills-content">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-categories">
+                    <div class="skills-category">
+                        <h3 class="category-title">Front-End</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-js skill-icon"></i>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react skill-icon"></i>
+                                <span class="skill-name">React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-jquery-plain skill-icon"></i>
+                                <span class="skill-name">jQuery</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-html5 skill-icon"></i>
+                                <span class="skill-name">HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt skill-icon"></i>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bold skill-icon"></i>
+                                <span class="skill-name">Bootstrap</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt skill-icon"></i>
+                                <span class="skill-name">Responsive</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-webpack-plain skill-icon"></i>
+                                <span class="skill-name">Webpack</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-file-code skill-icon"></i>
+                                <span class="skill-name">XML/JSON</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-sync-alt skill-icon"></i>
+                                <span class="skill-name">AJAX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">Back-End</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-node-js skill-icon"></i>
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server skill-icon"></i>
+                                <span class="skill-name">Express.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-lua-plain skill-icon"></i>
+                                <span class="skill-name">Lua</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-java skill-icon"></i>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-java-plain skill-icon"></i>
+                                <span class="skill-name">JUnit</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-vial skill-icon"></i> 
+                                <span class="skill-name">Unit Testing</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database skill-icon"></i>
+                                <span class="skill-name">SQL</span>
+                            </div>
+                            <!-- <div class="skill-item">
+                                <i class="devicon-postgresql-plain skill-icon"></i>
+                                <span class="skill-name">PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-sqlite-plain skill-icon"></i>
+                                <span class="skill-name">Lua-SQLite3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-hibernate-plain skill-icon"></i>
+                                <span class="skill-name">Hibernate</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-mysql-plain skill-icon"></i>
+                                <span class="skill-name">MySQL</span>
+                            </div> -->
+                            <div class="skill-item">
+                                <i class="fas fa-leaf skill-icon"></i>
+                                <span class="skill-name">Spring</span>
+                            </div>
+                             <div class="skill-item">
+                                <img src="https://www.primefaces.org/wp-content/uploads/2018/05/primefaces-logo.png" alt="PrimeFaces">
+                                <span class="skill-name">PrimeFaces</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-php skill-icon"></i>
+                                <span class="skill-name">PHP</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-terminal skill-icon"></i>
+                                <span class="skill-name">Bash</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-c-plain skill-icon"></i>
+                                <span class="skill-name">C</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-project-diagram skill-icon"></i>
+                                <span class="skill-name">Regex</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">DevOps & Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-docker skill-icon"></i>
+                                <span class="skill-name">Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-ship skill-icon"></i>
+                                <span class="skill-name">Kubernetes</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt skill-icon"></i>
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code-branch skill-icon"></i>
+                                <span class="skill-name">SVN</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-robot skill-icon"></i>
+                                <span class="skill-name">Robot</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-tasks skill-icon"></i>
+                                <span class="skill-name">Jenkins</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database skill-icon"></i>
+                                <span class="skill-name">DB Tools</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-tools skill-icon"></i>
+                                <span class="skill-name">Dev Tools</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-rocket skill-icon"></i>
+                                <span class="skill-name">Postman</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-wind skill-icon"></i>
+                                <span class="skill-name">Wireshark</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-project-diagram skill-icon"></i>
+                                <span class="skill-name">Balsamiq</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">IDEs & Other</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-code skill-icon"></i>
+                                <span class="skill-name">VS Code</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-lightbulb skill-icon"></i>
+                                <span class="skill-name">Eclipse</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-php skill-icon"></i>
+                                <span class="skill-name">PHPStorm</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bolt skill-icon"></i>
+                                <span class="skill-name">CodeCharge</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-scroll skill-icon"></i>
+                                <span class="skill-name">CMS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-users skill-icon"></i>
+                                <span class="skill-name">Agile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down" onclick="scrollToSection('experience')">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section dark-section" id="experience">
+            <div class="experience-content">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-list">
+                    <!-- Experience 1 -->
+                    <div class="experience-item">
+                        <h3 class="experience-title">Face Recognition App</h3>
+                        <p class="experience-role">Full-Stack Software Developer</p>
+                        <p class="experience-description">
+                            • Created this app while attending the Full-Stack Software Developer course path of Zero To Mastery academy. Followed this course in order to update my knowledge on CSS, latest versions of Javascript, learning REACT, NodeJS with ExpressJS, PostgreSQL by building a full-stack app and using a Machine Learning API.
+                        </p>
+                        <p class="experience-description">
+                            • This app detects a human face in photos that uploaded to the app and increases a counter for every successful recognition for a specific user. The Back-end supports not only the API calls to Clarifai API which detects the face in an image, but also the users registration and sign in process handling.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Javascript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Machine Learning API</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML</span>
+                        </div>
+                        <div class="experience-actions">
+                            <a href="https://face-recognition-brain-lldi.onrender.com/" target="_blank" class="btn btn-outline">View App</a>
+                            <a href="https://github.com/ckapsalis2710/face-recognition-brain" target="_blank" class="btn btn-outline">View Front-end Code</a>
+                            <a href="https://github.com/ckapsalis2710/face-recognition-brain-api" target="_blank" class="btn btn-outline">View Back-end Code</a>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="experience-item">
+                        <h3 class="experience-title">Nokia's Altiplano Controller App</h3>
+                        <p class="experience-role">Senior Technical Specialist</p>
+                        <p class="experience-description">
+                            • Back-end development of Altiplano Controller, an open software GUI platform that served as an API to connect other Nokia's software units.
+                        <p class="experience-description">
+                            • Software development of a feature in Java, tested on JUnit, loaded on a Docker container, deployed on Kubernetes platform. Most of the work applied to arrange PODs configuration and their software interaction, under Kubernetes.
+                        </p>
+                        <p class="experience-description">
+                            • Experience in Intent development logic, Microservices, Cloud based solutions, DevOps operations, Kibana search engine, Postman request engine.
+                        </p>
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JUnit</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">POD</span>
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">Postman API</span>
+                            <span class="tech-tag">Kibana</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Microsoft Visual Studio Code</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="experience-item">
+                        <h3 class="experience-title">Nokia's WebCT and ASLM Apps</h3>
+                        <p class="experience-role">Software Engineer</p>
+                        <p class="experience-description">
+                            • Full-stack development of WebCT, a software that provided a GUI to administer X-Haul microwave products.
+                        </p>
+                        <p class="experience-description">
+                            • Back-end development of WebCT in Lua and DB handling with Lua-Sqlite3. As well, development in Java with JUnit testing of ASLM, an app that produces licenses for all X-Haul products.
+                        </p>
+                        <p class="experience-description">
+                            • Front-end development in Javascript, jQuery, HTML5, CSS, and Bootstrap framework.
+                        </p>
+                        <p class="experience-description">
+                            • Involved with the full circle of a feature's production. Creation and reviewing of features' code, software architectural designs, Low Level Design, mock-ups, CuDo documents. Developing at least one feature per release while following a biannual release schedule.
+                        </p>
+                        <p class="experience-description">
+                            • Peer reviewing of Code, Use Cases, Test Strategy and Test Cases.
+                        </p>
+                        <p class="experience-description">
+                            • Full stack Unit Testing and debugging code.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Lua</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Unit Testing</span>
+                            <span class="tech-tag">JUnit</span>
+                            <span class="tech-tag">JSON</span>
+                            <span class="tech-tag">Debugging</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">SVN</span>
+                            <span class="tech-tag">Regex</span>
+                            <span class="tech-tag">Browsers' Web Developers Tools</span>
+                            <span class="tech-tag">Low-Level Design</span>
+                            <span class="tech-tag">Balsamiq</span>
+                            <span class="tech-tag">Eclipse</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">DBVisualizer</span>
+                            <span class="tech-tag">DB browser for SQLite</span>
+                            <span class="tech-tag">CI</span>
+                            <span class="tech-tag">XML</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Agile</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience 4 -->
+                    <div class="experience-item">
+                        <h3 class="experience-title">Nokia's FMANG App</h3>
+                        <p class="experience-role">Software Engineer</p>
+                        <p class="experience-description">
+                            • Full-stack software development of the FMANG application, managing Nokia's FlexiNG product. An app that offered mainly a GUI to monitor all kind of alarms, statistics and product’s health, like also managing all kind of product’s configuration.
+                        </p>
+                        <p class="experience-description">
+                            • Back-end development in Java and Java EE Development toolset: JSF/Primefaces, Spring, Hibernate, Maven, Tomcat, Jenkins, Junit.
+                        </p>
+                        <p class="experience-description">
+                            • Front-end development in Javascript, HTML, CSS.
+                        </p>
+                        <p class="experience-description">
+                            • Change the whole product’s GUI style after company’s rebranding. Create some new features, debugging and peer reviewing of code. Milestone, to solve with the help of the team a crucial bug that maid the whole app to fail.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">JSON</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">JUnit</span>
+                            <span class="tech-tag">JSF/Primefaces</span>
+                            <span class="tech-tag">Hibernate</span>
+                            <span class="tech-tag">Spring MVC</span>
+                            <span class="tech-tag">Regex</span>
+                            <span class="tech-tag">Eclipse</span>
+                            <span class="tech-tag">Navicat</span>
+                            <span class="tech-tag">DBVisualizer</span>
+                            <span class="tech-tag">DB browser for SQLite</span>
+                            <span class="tech-tag">Browsers' Web Developers Tools</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">XML</span>
+                            <span class="tech-tag">Agile</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience 5 -->
+                    <div class="experience-item">
+                        <h3 class="experience-title">Nokia's FlexiNG Product</h3>
+                        <p class="experience-role">E&V Tester</p>
+                        <p class="experience-description">
+                            • Responsible for CI Test suite of Nokia's LTE network gateway (FlexiNG) of around 400 Test Cases.
+                        </p>
+                        <p class="experience-description">
+                            • Entity and Verification testing in Robot framework. Daily report on the CI state and fixing each TC that failed.
+                        </p>
+                        <p class="experience-description">
+                            • Enhancing the CI by creating some new TCs.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Robot Framework</span>
+                            <span class="tech-tag">CI</span>
+                            <span class="tech-tag">Test Case Generation</span>
+                            <span class="tech-tag">Bash</span>
+                            <span class="tech-tag">Wireshark</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Agile</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience 6 -->
+                    <div class="experience-item">
+                        <h3 class="experience-title">Cybertechnic's Modus CMS</h3>
+                        <p class="experience-role">Web Programmer / Developer</p>
+                        <p class="experience-description">
+                            • Full-stack software development of Modus CMS.
+                        </p>
+                        <p class="experience-description">
+                            • Back-end development in PHP and DB handling with MySQL. Front-end development in Javascript, HTML, CSS.
+                        </p>
+                        <p class="experience-description">
+                            • Responsible for Back-end administration and development of Modus CMS.
+                        </p>
+                        <p class="experience-description">
+                            • Updating and debugging CMS’ code. Creating CMS' modules, components, droplets. Data handling through DB queries of production's applications, upon customers requests.
+                        </p>
+                        <p class="experience-description">
+                            • Implementation of RAFM (Restricted Access File Manager) filesystem and integration of Ajaxplorer GUI into Modus CMS.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">JSON</span>
+                            <span class="tech-tag">CMS</span>
+                            <span class="tech-tag">CodeCharge Studio</span>
+                            <span class="tech-tag">PhpStorm</span>
+                            <span class="tech-tag">Regex</span>
+                            <span class="tech-tag">Browsers' Web Developers Tools</span>
+                            <span class="tech-tag">DBVisualizer</span>
+                            <span class="tech-tag">XML</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience 7 -->
+<!--                     <div class="experience-item">
+                        <h3 class="experience-title">Inventory Management System</h3>
+                        <p class="experience-role">Backend Developer</p>
+                        <p class="experience-description">
+                            Designed and implemented a distributed inventory management system for a retail chain with 200+ locations. System handles over 1 million inventory updates daily with eventual consistency across all nodes.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">gRPC</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="scroll-down" onclick="scrollToSection('contact')">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section light-section" id="contact">
+            <div class="contact-content">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
+                <div class="contact-links">
+                    <a href="https://github.com/ckapsalis2710" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/christos-kapsalis-lin" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:xrikapsalis@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-down" onclick="scrollToSection('resume')">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="section dark-section" id="resume">
+            <div class="resume-content">
+                <div class="resume-box">
+                    <h2 class="resume-title">My Resume</h2>
+                    <p style="margin-bottom: 30px; color: var(--light-text);">Download my complete resume that showcases all relevant info of my profile</p>
+                    <a href="Christos_Kapsalis_CV.pdf" target="_blank" class="btn" download>Download Resume (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="main-footer">
+            <p>&copy; <span id="year"></span> Christos Kapsalis. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
