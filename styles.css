@@ -401,7 +401,7 @@ h1, h2, h3, h4 {
 }
 
 .tech-tag {
-    background-color: var(--medium-bg);
+    background-color: #3c3b3b;
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.8rem;
