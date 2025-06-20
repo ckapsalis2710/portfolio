@@ -22,6 +22,7 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Work</a>
+                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <a href="#resume" class="nav-link">Resume</a>
             </nav>
@@ -44,7 +45,7 @@
             <div class="about-content">
                 <h2 class="section-title">About Me</h2>
                 <p class="about-text">
-                    Full-stack software developer for 8+ years in numerous software projects. Front-end development in React, Javascript, CSS, Bootstrap and HTML. Back-end development in Java, Lua and PHP. Eager to learn new languages, technologies and undertake interesting projects. Accountable, working on schedule and comfortable working as a team member.
+                    Full-stack software developer for 8+ years in numerous software projects. Front-end development in React.js, Javascript(ES6+), CSS3, Bootstrap and HTML5. Backend development in Node.js, Java, Lua and PHP. Eager to learn new languages, technologies and undertake interesting projects. Accountable, working on schedule and comfortable working as a team member.
                 </p>
             </div>
             <div class="scroll-down" onclick="scrollToSection('skills')">
@@ -257,31 +258,7 @@
                 <h2 class="section-title">Work Experience</h2>
                 <div class="experience-list">
                     <!-- Experience 1 -->
-                    <div class="experience-item">
-                        <h3 class="experience-title">Face Recognition App</h3>
-                        <p class="experience-role">Full-Stack Software Developer</p>
-                        <p class="experience-description">
-                            • This React app developed while attending the first course of the Full-Stack Software Developer career path of Zero To Mastery Academy. 
-                        </p>
-                        <p class="experience-description">
-                            • It detects a human face in photos uploaded to the app and increases a counter for every successful recognition for a specific user. The NodeJs server supports not only the API calls to Clarifai API which detects the face in an image, but also the users' access, through the PostgreSQL DB.
-                        </p>
-                        <div class="experience-tech">
-                            <span class="tech-tag">Javascript</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Machine Learning API</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">HTML</span>
-                        </div>
-                        <div class="experience-actions">
-                            <a href="https://face-recognition-brain-lldi.onrender.com/" target="_blank" class="btn btn-outline">View App</a>
-                            <a href="https://github.com/ckapsalis2710/face-recognition-brain" target="_blank" class="btn btn-outline">View Front-end Code</a>
-                            <a href="https://github.com/ckapsalis2710/face-recognition-brain-api" target="_blank" class="btn btn-outline">View Back-end Code</a>
-                        </div>
-                    </div>
+                    
 
                     <!-- Experience 2 -->
                     <div class="experience-item">
@@ -296,6 +273,7 @@
                         <p class="experience-description">
                             • Experience in Intent development logic, Microservices, Cloud based solutions, DevOps operations, Kibana search engine, Postman request engine.
                         </p>
+                        <h4>Technologies Used:</h4>
                         <div class="experience-tech">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">JUnit</span>
@@ -326,6 +304,7 @@
                         <p class="experience-description">
                             • Side responsibility to maintain and develop ASLM, a former Alcatel-Lucent app that produces licenses for all X-Haul software/hardware products. Back-end development in Java with JUnit testing, of enhancements for extraction of new licenses or adjust logic for older ones. 
                         </p>
+                        <h4>Technologies Used:</h4>
                         <div class="experience-tech">
                             <span class="tech-tag">Lua</span>
                             <span class="tech-tag">JavaScript</span>
@@ -369,6 +348,7 @@
                         <p class="experience-description">
                             • Except of creating some new features, debugging and peer reviewing of code, main milestones were to solve with the help of the team a crucial bug that maid the whole app to fail, like also to change the whole product’s GUI style after company’s rebranding. 
                         </p>
+                        <h4>Technologies Used:</h4>
                         <div class="experience-tech">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">JavaScript</span>
@@ -399,6 +379,7 @@
                         <p class="experience-description">
                             • Responsible as a Tester for the CI Test suite of Nokia's LTE network gateway (FlexiNG), set in Robot framework. Daily report on the CI state, of around 400 Test Cases and investigating-fixing each TC that failed. Also enhancing the CI by creating some new TCs.
                         </p>
+                        <h4>Technologies Used:</h4>
                         <div class="experience-tech">
                             <span class="tech-tag">Robot Framework</span>
                             <span class="tech-tag">CI</span>
@@ -423,6 +404,7 @@
                         <p class="experience-description">
                             • Milestones the implementation of RAFM (Restricted Access File Manager) filesystem and the integration of Ajaxplorer GUI into Modus CMS.
                         </p>
+                        <h4>Technologies Used:</h4>
                         <div class="experience-tech">
                             <span class="tech-tag">PHP</span>
                             <span class="tech-tag">SQL</span>
@@ -442,8 +424,108 @@
                     </div>
                 </div>
             </div>
-            <div class="scroll-down" onclick="scrollToSection('contact')">
+            <div class="scroll-down" onclick="scrollToSection('projects')">
                 <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section class="section dark-section" id="projects">
+            <div class="projects-content">
+                <h2 class="section-title">Projects</h2>
+
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3 class="project-title">Face Recognition App</h3>
+                        <p class="project-role">Full-Stack Developement Project</p>
+                    </div>
+                    
+                    <div class="project-screenshot">
+                        <!-- Main screenshot (default) -->
+                        <img src="FaceRec_App_Img_2.jpg" alt="Main Screenshot" class="main-screenshot">
+                        
+                        <!-- Thumbnail Gallery -->
+                        <div class="thumbnail-container">
+                            <img src="FaceRec_App_Img_2.jpg" alt="Thumb 1" class="thumbnail active" onclick="changeImage(this, 'FaceRec_App_Img_2.jpg')">
+                            <img src="FaceRec_App_Img_3.jpg" alt="Thumb 2" class="thumbnail" onclick="changeImage(this, 'FaceRec_App_Img_3.jpg')">
+                            <img src="FaceRec_App_Img_1.jpg" alt="Thumb 3" class="thumbnail" onclick="changeImage(this, 'FaceRec_App_Img_1.jpg')">
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <p>This React app developed while attending the first course of the Full-Stack Software Developer career path of Zero To Mastery Academy</p>
+                        <ul>
+                            <li>It detects a human face in photos uploaded to the app and increases a counter for every successful recognition for a specific user. The NodeJs server supports not only the API calls to Clarifai API which detects the face in an image, but also the users' access, through the PostgreSQL DB.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Javascript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Machine Learning API</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-actions">
+                        <a href="https://face-recognition-brain-lldi.onrender.com/" target="_blank" class="btn btn-outline">Live Demo</a>
+                        <a href="https://github.com/ckapsalis2710/face-recognition-brain" target="_blank" class="btn btn-outline">View Front-end Code</a>
+                        <a href="https://github.com/ckapsalis2710/face-recognition-brain-api" target="_blank" class="btn btn-outline">View Back-end Code</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3 class="project-title">Robofriends App</h3>
+                        <p class="project-role">React Development Project</p>
+                    </div>
+                    
+                    <div class="project-screenshot">
+                        <a href="https://ckapsalis2710.github.io/robofriends/" target="_blank">
+                            <img src="./Robofriends_App_Img_1.jpg" 
+                                 alt="Project Screenshot" 
+                                 class="screenshot-img">
+                         </a>
+                    </div>
+                    
+                    <div class="project-description">
+                        <p>This React app developed while attending the first course of the Full-Stack Software Developer career path of Zero To Mastery Academy, integrated techniques like Redux and PWA.</p>
+                        <ul>
+                            <li>A fast, performant, and responsive project where you pull in data from an API and interactively search through your robot friends.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">PWA</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">JSON</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-actions">
+                        <a href="https://ckapsalis2710.github.io/robofriends/" target="_blank" class="btn btn-outline">Live Demo</a>
+                        <a href="https://github.com/ckapsalis2710/robofriends" target="_blank" class="btn btn-outline">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="scroll-down" onclick="scrollToSection('contact')">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
             </div>
         </section>
 

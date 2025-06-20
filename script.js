@@ -39,6 +39,15 @@ function scrollToSection(sectionId) {
     }
 }
 
+function changeImage(thumb, newSrc) {
+    // Update of main image
+    document.querySelector('.main-screenshot').src = newSrc;
+    
+    // Update active thumbnail
+    document.querySelectorAll('.thumbnail').forEach(tn => tn.classList.remove('active'));
+    thumb.classList.add('active');
+}
+
 // Handle scroll events to update active section
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('.section');

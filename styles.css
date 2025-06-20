@@ -384,6 +384,8 @@ h1, h2, h3, h4 {
     margin-bottom: 15px;
     color: var(--light-text);
     font-style: italic;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
 }
 
 .experience-description {
@@ -391,6 +393,11 @@ h1, h2, h3, h4 {
     line-height: 1.6;
     margin-bottom: 20px;
     color: var(--light-text);
+}
+
+.experience-item h4 {
+    margin-bottom: 10px;
+    color: var(--accent-color);
 }
 
 .experience-tech {
@@ -481,6 +488,131 @@ h1, h2, h3, h4 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     color: white;
 }
+
+/* Projects Section */
+.projects-content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project-item {
+    background-color: rgba(40, 40, 40, 0.7);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.project-role {
+    font-style: italic;
+    color: var(--light-text);
+}
+
+.project-screenshot {
+    margin: 20px 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.screenshot-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.screenshot-img:hover {
+    transform: scale(1.02);
+}
+
+.project-description {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.project-description ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.project-tech h4 {
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-item {
+        padding: 15px;
+    }
+    
+    .project-title {
+        font-size: 1.5rem;
+    }
+    
+    .project-actions {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Thumbnaul images */
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.thumbnail:hover, .thumbnail.active {
+    opacity: 1;
+    border: 2px solid var(--accent-color);
+}
+
+.main-screenshot {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
 
 /* Resume section styles */
 .resume-content {
