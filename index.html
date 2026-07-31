@@ -499,6 +499,53 @@
             <div class="projects-content">
                 <h2 class="section-title">Projects</h2>
 
+                <!-- Project 4: LiveDataViewer App -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3 class="project-title">LiveDataViewer App</h3>
+                        <p class="project-role">Full-Stack Development Project</p>
+                    </div>
+                    
+                    <div class="project-screenshot">
+                        <!-- Main screenshot (default) -->
+                        <img src="images/LiveDataViewerHomePage.png" alt="LiveDataViewer Home Page" class="main-screenshot">
+                        
+                        <!-- Thumbnail Gallery -->
+                        <div class="thumbnail-container">
+                            <img src="images/LiveDataViewerHomePage.png" alt="Home Page" class="thumbnail active" onclick="changeImage(this, 'images/LiveDataViewerHomePage.png')">
+                            <img src="images/LiveDataViewerMainPage.png" alt="Dashboard with Data" class="thumbnail" onclick="changeImage(this, 'images/LiveDataViewerMainPage.png')">
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <p><strong>Real-time data stream monitoring dashboard</strong> with high-frequency WebSocket integration and optimized performance.</p>
+                        <p>A full-stack web application that demonstrates handling of high-frequency real-time data (200 messages/second) through a WebSocket connection. Features an interactive AG Grid table with virtual scrolling, efficient data batching (10 UI updates/sec), and manual connection controls. Optimized React rendering with <code>useCallback</code>, <code>useMemo</code>, and <code>useRef</code> hooks for smooth UI performance.</p>
+                        <ul>
+                            <li><strong>Key Features:</strong> 200 msg/sec WebSocket stream, Batching mechanism for performance (10 updates/sec), AG Grid with sorting &amp; resizing, Manual Connect/Disconnect controls, Auto-reconnection on unexpected disconnect, Responsive design with Tailwind CSS.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">AG Grid</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-actions">
+                        <a href="https://livedataviewerapp.onrender.com" target="_blank" class="btn btn-outline">Live Demo</a>
+                        <a href="https://github.com/ckapsalis2710/LiveDataViewerApp" target="_blank" class="btn btn-outline">Github Source Code</a>
+                    </div>
+                </div>
+
                 <!-- Project 3 -->
                 <div class="project-item">
                     <div class="project-header">
