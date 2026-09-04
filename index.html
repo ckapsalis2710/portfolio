@@ -503,6 +503,101 @@
             <div class="projects-content">
                 <h2 class="section-title">Projects</h2>
 
+                <!-- Project 5: SafetyFirst Dashboard               -->
+                <div class="project-item">
+                    <!-- Project Header -->
+                    <div class="project-header">
+                        <h3 class="project-title">🦺 SafetyFirst Dashboard</h3>
+                        <p class="project-role">Frontend Developer Project</p>
+                    </div>
+                    
+                    <!-- Image Carousel -->
+                    <div class="project-screenshot">
+                        <!-- Main Screenshot -->
+                        <img src="images/safetyfirst-dashboard/SafetyFirst_Dashboard.png" 
+                            alt="SafetyFirst Dashboard Preview" 
+                            class="main-screenshot" 
+                            id="mainImage-safetyfirst">
+                        
+                        <!-- Thumbnail Gallery -->
+                        <div class="thumbnail-container">
+                            <img src="images/safetyfirst-dashboard/SafetyFirst_Dashboard.png" 
+                                alt="Dashboard" 
+                                class="thumbnail active" 
+                                onclick="changeImage(this, 'images/safetyfirst-dashboard/SafetyFirst_Dashboard.png', 'mainImage-safetyfirst')">
+                            <img src="images/safetyfirst-dashboard/SafetyFirst_Workers.png" 
+                                alt="Workers" 
+                                class="thumbnail" 
+                                onclick="changeImage(this, 'images/safetyfirst-dashboard/SafetyFirst_Workers.png')">
+                            <img src="images/safetyfirst-dashboard/SafetyFirst_RoleAnalysis.png" 
+                                alt="Role Analysis" 
+                                class="thumbnail" 
+                                onclick="changeImage(this, 'images/safetyfirst-dashboard/SafetyFirst_RoleAnalysis.png')">
+                            <img src="images/safetyfirst-dashboard/SafetyFirst_SiteAnalysis.png" 
+                                alt="Sites" 
+                                class="thumbnail" 
+                                onclick="changeImage(this, 'images/safetyfirst-dashboard/SafetyFirst_SiteAnalysis.png')">
+                            <img src="images/safetyfirst-dashboard/SafetyFirst_Incidents.png" 
+                                alt="Incidents" 
+                                class="thumbnail" 
+                                onclick="changeImage(this, 'images/safetyfirst-dashboard/SafetyFirst_Incidents.png')">
+                            <img src="images/safetyfirst-dashboard/SafetyFirst_Sceletons.png" 
+                                alt="MUI Sceletons" 
+                                class="thumbnail" 
+                                onclick="changeImage(this, 'images/safetyfirst-dashboard/SafetyFirst_Sceletons.png')">
+                            <img src="images/safetyfirst-dashboard/SafetyFirst_PPERec.png" 
+                                alt="Recommendations" 
+                                class="thumbnail" 
+                                onclick="changeImage(this, 'images/safetyfirst-dashboard/SafetyFirst_PPERec.png')">
+                        </div>
+                    </div>
+                    
+                    <!-- Description -->
+                    <div class="project-description">
+                        <p><strong>Interactive construction site safety supervision dashboard.</strong> 
+                        This is a fully functional frontend application that demonstrates how a supervisor 
+                        would monitor a factory floor. It provides real-time worker monitoring, PPE compliance 
+                        analysis, incident detection, and personalized recommendations in light and dark modes.</p>
+                        <p>The application uses <strong>static mock data (JSON)</strong> to simulate a live 
+                        data feed from robots (Unitree), wearable sensors, and incident logs. 
+                        <strong>Loading skeletons</strong> are implemented to enhance the user experience 
+                        during data fetching, showcasing a production-ready approach to frontend development.</p>
+                        <ul>
+                            <li><strong>Dashboard:</strong> KPI cards, worker table with search/filter, alerts panel</li>
+                            <li><strong>Workers:</strong> 30-day compliance trend, biometrics, incidents & violations log</li>
+                            <li><strong>Role Analysis:</strong> Compliance rate comparison by role, top violations per role</li>
+                            <li><strong>Sites:</strong> Site summary, 6-month compliance trend, risk zone map</li>
+                            <li><strong>Incidents:</strong> Monthly incident trend, distribution by shift hour</li>
+                            <li><strong>Robot Unitree:</strong> Simulated camera feed, robot status, patrol route</li>
+                            <li><strong>Recommendations:</strong> Personalized PPE recommendations per worker</li>
+                        </ul>
+                    </div>
+
+                    <!-- Technologies -->
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React 19</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Material UI</span>
+                            <span class="tech-tag">React Router</span>
+                            <span class="tech-tag">Recharts</span>
+                            <span class="tech-tag">Emotion</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Actions -->
+                    <div class="project-actions">
+                        <a href="https://safety-first-dashboard-app.vercel.app/" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/ckapsalis2710/safety-first-dashboard-app" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Project 4: LiveDataViewer App -->
                 <div class="project-item">
                     <div class="project-header">
@@ -545,8 +640,12 @@
                     </div>
                     
                     <div class="project-actions">
-                        <a href="https://livedataviewerapp.onrender.com" target="_blank" class="btn btn-outline">Live Demo</a>
-                        <a href="https://github.com/ckapsalis2710/LiveDataViewerApp" target="_blank" class="btn btn-outline">Github Source Code</a>
+                        <a href="https://livedataviewerapp.onrender.com" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/ckapsalis2710/LiveDataViewerApp" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> Github Source Code
+                        </a>
                     </div>
                 </div>
 
@@ -596,9 +695,15 @@
                     </div>
                     
                     <div class="project-actions">
-                        <a href="https://questionnaire-app-4dcj.onrender.com/" target="_blank" class="btn btn-outline">Live Demo</a>
-                        <a href="https://github.com/ckapsalis2710/questionnaire-app" target="_blank" class="btn btn-outline">View Front-end Code</a>
-                        <a href="https://github.com/ckapsalis2710/questionnaire-app_api" target="_blank" class="btn btn-outline">View Back-end Code</a>
+                        <a href="https://questionnaire-app-4dcj.onrender.com/" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/ckapsalis2710/questionnaire-app" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> View Front-end Code
+                        </a>
+                        <a href="https://github.com/ckapsalis2710/questionnaire-app_api" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> View Back-end Code
+                        </a>
                     </div>
                 </div>
 
@@ -648,9 +753,15 @@
                     </div>
                     
                     <div class="project-actions">
-                        <a href="https://face-recognition-brain-lldi.onrender.com/" target="_blank" class="btn btn-outline">Live Demo</a>
-                        <a href="https://github.com/ckapsalis2710/face-recognition-brain" target="_blank" class="btn btn-outline">View Front-end Code</a>
-                        <a href="https://github.com/ckapsalis2710/face-recognition-brain-api" target="_blank" class="btn btn-outline">View Back-end Code</a>
+                        <a href="https://face-recognition-brain-lldi.onrender.com/" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/ckapsalis2710/face-recognition-brain" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> View Front-end Code
+                        </a>
+                        <a href="https://github.com/ckapsalis2710/face-recognition-brain-api" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> View Back-end Code
+                        </a>
                     </div>
                 </div>
                 
@@ -694,10 +805,18 @@
                     </div>
                     
                     <div class="project-actions">
-                        <a href="https://ckapsalis2710.github.io/robofriends/" target="_blank" class="btn btn-outline">Live Demo</a>
-                        <a href="https://github.com/ckapsalis2710/robofriends" target="_blank" class="btn btn-outline">Source Code</a>
-                        <a href="https://robofriends-next.vercel.app/" target="_blank" class="btn btn-outline">Live Next.js Demo</a>
-                        <a href="https://github.com/ckapsalis2710/robofriends-next" target="_blank" class="btn btn-outline"> SSR Source Code</a>
+                        <a href="https://ckapsalis2710.github.io/robofriends/" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/ckapsalis2710/robofriends" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                        <a href="https://robofriends-next.vercel.app/" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Live Next.js Demo
+                        </a>
+                        <a href="https://github.com/ckapsalis2710/robofriends-next" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> SSR Source Code
+                        </a>
                     </div>
                 </div>
 
