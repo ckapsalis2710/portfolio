@@ -41,10 +41,12 @@ function scrollToSection(sectionId) {
 
 function changeImage(thumb, newSrc) {
     // Update of main image
-    document.querySelector('.main-screenshot').src = newSrc;
+    const projectScreenshot = thumb.closest('.project-screenshot');
+    const mainScreenshot = projectScreenshot.querySelector('.main-screenshot');
+    mainScreenshot.src = newSrc;
     
     // Update active thumbnail
-    document.querySelectorAll('.thumbnail').forEach(tn => tn.classList.remove('active'));
+    projectScreenshot.querySelectorAll('.thumbnail').forEach(tn => tn.classList.remove('active'));
     thumb.classList.add('active');
 }
 
